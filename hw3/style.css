@@ -1,0 +1,202 @@
+body{
+    margin: 0;
+}
+.mainWrap{
+    width: 100%;
+    height: 100px;
+    /* padding: 0 10%; */
+    background-color: #8C0000;
+}
+.logo{
+    position: relative;
+    left: 10%;
+    height: 100px;
+    align-items: center;
+}
+.logo img{
+    position: absolute;
+    height: 60px;
+    top: 20px;
+    width: auto;
+}
+.sub_logo{
+    position: absolute;
+    left: 220px;
+    width: 300px;
+    top: 30px;
+    font-size: xx-large;
+    color: white;
+    text-decoration: none;
+    border-left: 1px solid white;
+    padding-left: 10px;
+    margin-left: 10px;
+}
+.sub_img{
+    position: absolute;
+    height: 100px;
+    width: auto;
+    right: 0;
+    top: 0;
+}
+.sub_logo:hover{
+    color: #CECECE;
+}
+
+.info{
+    display: flex;
+    justify-content: space-between; /* Separates link and date */
+    align-items: center; /* Centers items vertically */
+    /* flex-wrap: wrap; */
+    margin:0 10%;
+    margin-top: 40px;
+}
+
+.info2{
+    display: flex;
+    justify-content: space-between; /* Separates link and date */
+    align-items: flex-start; /* Centers items vertically */
+    /* flex-wrap: wrap; */
+    margin:0 10%;
+    margin-top: 20px;
+}
+
+.content {
+    width: 50%;
+    margin: 0 10px;
+    text-align: left;
+}
+
+.title a {
+    display: inline-block;
+    width: 100%;
+    color: black; /* Default link color within title */
+    text-decoration: none; /* Removes underline */
+}
+
+.title a:hover {
+    color: #9b0000; /* Changes title link color to red on hover */
+}
+
+.title {
+    font-size: 18px;
+    color: #000;
+    width: 100%;
+    height: 30px;
+}
+
+.border-list {
+    width: calc(100% - 22px);
+    margin: 0;
+    border-top: 2px solid #dda813;
+    border-bottom: 1px solid #CECECE;
+    border-left: 1px solid #CECECE;
+    border-right: 1px solid #CECECE;
+    padding: 10px;
+    list-style: none; /* This removes the bullets */
+}
+
+.border-list li{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+}
+
+.border-list li a{
+    width: calc(100% - 52px);
+    /* display: inline-block; */
+    float: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: black; /* Change link color to black */
+    text-decoration: none; /* Remove underline */
+}
+
+.border-list li a:hover {
+    color: #9b0000; /* Change color on hover, choose color that fits your design */
+}
+
+.li2{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    display: list-item;
+}
+.li2-depart{
+    width: 100px;
+    padding-right: 10px;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    float: left;
+    text-align: left;
+    color: #9b0000;
+}
+.li2 .a2{
+    width: calc(100% - 162px);
+    display: inline-block;
+    float: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.li2 .span2{
+    width: 52px;
+    display: inline-block;
+    float: left;
+    text-align: right;
+}
+.li2 .a2:hover {
+    color: #9b0000; /* Change color on hover, choose color that fits your design */
+}
+
+table{
+
+    width: 250px;
+    height: 500px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin-top: 30px;
+    margin-right: 10px;
+}
+table, th, td {
+    border: 1px solid #CECECE; /* Apply a solid line for the table, rows, and cells */
+  }
+  th, td {
+    width: 50%;
+    text-align: center; /* Optional: Aligns text to the left */
+    padding: 8px; /* Optional: Adds space between the cell content and border */
+    background-repeat: no-repeat;
+    background-size: 36px 36px;
+    background-position: center;
+    transition: transform 0.3s ease; 
+  }
+  td:hover {
+    transform: scale(1.05); /* 放大元素 */
+    font-size: 0;
+    background-color: #9b0000; /* 改变背景颜色 */
+  }
+  td:hover img{
+    opacity: 0;
+  }
+
+img{
+    width: 36px; /* Image width will be 50% of its parent element */
+    height: 36px; /* Adjust height to maintain aspect ratio */
+    background-size: cover;
+    opacity: 1;
+}
+p{
+    margin: 0;
+}
+
+footer{
+    margin-bottom: 0;
+    margin-top: 50px;
+    height: 24px;
+    width: calc(100%-10px);
+    padding-left: 10px;
+    background-color: #505050;
+    color: white;
+}
